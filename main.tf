@@ -4,9 +4,9 @@ region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
-  ami             = "ami-06018068a18569ff2"
+  ami             = "ami-08db74f389216e7e0"
   instance_type   = "t2.micro"
-  key_name        = "rahamabc"
+  key_name        = "naveen"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
   user_data       = <<EOF
@@ -23,9 +23,9 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = "ami-06018068a18569ff2"
+  ami             = "ami-08db74f389216e7e0"
   instance_type   = "t2.micro"
-  key_name        = "rahamabc"
+  key_name        = "naveen"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
   user_data       = <<EOF
@@ -42,9 +42,9 @@ EOF
 }
 
 resource "aws_instance" "three" {
-  ami             = "ami-06018068a18569ff2"
+  ami             = "ami-08db74f389216e7e0"
   instance_type   = "t2.micro"
-  key_name        = "rahamabc"
+  key_name        = "naveen"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
   tags = {
@@ -53,9 +53,9 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami             = "ami-06018068a18569ff2"
+  ami             = "ami-08db74f389216e7e0"
   instance_type   = "t2.micro"
-  key_name        = "rahamabc"
+  key_name        = "naveen"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
   tags = {
@@ -88,7 +88,7 @@ resource "aws_security_group" "five" {
 }
 
 resource "aws_s3_bucket" "six" {
-  bucket = "devopsbyrahamterraserverbucketoo9988"
+  bucket = "kavuridon9988"
 }
 
 resource "aws_iam_user" "seven" {
